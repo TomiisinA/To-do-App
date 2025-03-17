@@ -34,9 +34,9 @@ function App() {
 
   return (
     <>
-      <div className="bg-blue-500 text-white p-4 min-h-screen flex justify-center items-center">
-        <div className="max-w-[500px] w-[90%] bg-white p-4 rounded-md shadow-md">
-          <h1 className="text-center text-black text-2xl">To-do for the day</h1>
+      <div className="bg-blue-300 text-white p-4 min-h-screen flex justify-center font-mono items-center">
+        <div className="max-w-[500px] h-[100%] w-[100%] bg-white p-4 rounded-md shadow-md">
+          <h1 className="text-center text-black text-2xl font-bold">Daily Tasks</h1>
           <div className="flex gap-2 justify-center my-8">
             <input
               value={input}
@@ -53,7 +53,7 @@ function App() {
             </button>
           </div>
           <div>
-            <h1 className="text-center text-black text-xl font-bold"> Tasks </h1>
+            <h1 className="text-center text-black text-2xl font-bold"> Tasks </h1>
            {task.length > 0 ? (
             <>
              {task.map((task) => {
